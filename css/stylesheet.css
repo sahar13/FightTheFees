@@ -1,0 +1,396 @@
+
+/* @font-face Fonts*/
+@font-face {
+    font-family: 'franklingothicheavyitalic';
+    src: url('../fonts/franklin-gothic-heavy-italic.ttf');
+}
+
+@font-face {
+    font-family: 'franklingothicheavyregular';
+    src: url('../fonts/franklin-gothic-heavy-regular.ttf');
+}
+
+@font-face {
+    font-family: 'kabelblack';
+    src: url('../fonts/kabel-black.ttf');
+}
+
+@font-face {
+    font-family: 'localbrewerythreebold';
+    src: url('../fonts/local-brewery-three-bold.otf');
+}
+
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol {
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset browser styles */
+
+/*set fixed with on wrapper with background image*/
+body {
+  background-color: #e5d3bf;
+}
+
+.wrapper {
+	background-image: url("../images/background.jpg");
+	width: 960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*create banner with fixed position for call to action*/
+.banner {
+	width: 960px;
+	height: 75px;
+	background-color: black;
+  margin-left:auto;
+	margin-right:auto;
+	position: fixed;
+  z-index: 20;
+}
+
+.banner h1 {
+	font-family: 'localbrewerythreebold';
+	font-size: 50px;
+	color: #ebd2bf;
+  text-align: center;
+  padding-top: 13px;
+}
+
+/*display nav bar as inline element*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+}
+
+/*Use .nav so that each element has a black box as a background and brown text. Display all elements horizontally as inline-block and position each element relative to one another.*/
+.nav {
+	width: 100px;
+	height: 30px;
+	background-color: black;
+	display: inline-block;
+  margin-left: 17px;
+  position: relative;
+  bottom: 30px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+/*Use a logo as one of the nav bar's elements as a link to the homepage and make it transofrm into square on hover*/
+.logo {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-color: #ec2c27;
+  margin-top: 100px;
+  margin-left: 17px;
+	display: inline-block;
+  transition: height 1s;
+  transition: width 1s;
+  transition: border-radius 1s, box-shadow 1s, background 1s;
+  box-shadow: 0;
+}
+
+.logo:hover {
+  border-radius: 10%;
+  box-shadow: 0px 8px 6px -4px #000000;
+  background: black;
+  transition: border-radius 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+#megaphone {
+  display: inline-block;
+  position: relative;
+  left: 25px;
+  top: 75px;
+}
+.border {
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  background-color: transparent;
+  border-width: 2px;
+  border-color: #ebd2bf;
+  border-style: dashed;
+  position: relative;
+  top: 13px;
+  left: 13px;
+}
+
+.logo h1 {
+	font-family: 'franklingothicheavyitalic';
+	font-size: 37px;
+	color: #ebd2bf;
+  position: relative;
+  top: 15px;
+  left: 35px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ebd2bf;
+}
+
+a:hover {
+  color: #ebd2bf;
+  background-color: #ec2c27;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ebd2bf;
+}
+
+.video {
+  display: inline-block;
+  position: relative;
+  left: 75px;
+  top: 75px;
+}
+
+#h2 {
+  font-family: 'franklingothicheavyitalic';
+  font-size: 50px;
+	color: black;
+  text-align: center;
+  position: relative;
+  top: 125px;
+}
+
+#h3 {
+  font-family: 'localbrewerythreebold';
+  font-size: 50px;
+	color: black;
+  text-align: center;
+  position: relative;
+  top: 125px;
+}
+
+.demand {
+	width: 300px;
+  margin-left: 19px;
+  margin-top: 125px;
+  float: left;
+}
+
+.demand h1 {
+  font-family: 'franklingothicheavyitalic';
+  font-size: 250px;
+	color: #ec2c27;
+
+}
+
+.demand p {
+  font-family: 'franklingothicheavyregular';
+  font-size: 40px;
+  color: black;
+  letter-spacing: -1px;
+  position: relative;
+  top: -190px;
+  left: 65px;
+}
+
+.main {
+
+  margin-top: 60px;
+  margin-right: 25px;
+  margin-left: 25px;
+
+  display: inline-block;
+}
+
+.section {
+  padding-top: 25px;
+}
+
+.article {
+  padding-top: 50px;
+}
+
+
+.intro {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'franklingothicheavyitalic';
+  font-size: 30px;
+}
+
+.main h1 {
+  font-family: 'franklingothicheavyitalic';
+  font-size: 30px;
+}
+
+.main h2 {
+  font-family: 'franklingothicheavyregular';
+  font-size: 25px;
+}
+
+.main h3 {
+  font-family: 'franklingothicheavyregular';
+  font-size: 23px;
+}
+
+.main p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  text-align: justify;
+}
+
+.ftf {
+  color: #ec2c27;
+}
+
+.aside {
+  width: 265px;
+  display: inline-block;
+  float: right;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  border-width: 3px;
+  border-style: dashed;
+  padding: 20px;
+
+}
+
+.megaphone {
+  display: inline-block;
+  position: relative;
+  left: 20px;
+}
+
+#doa {
+  border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	background-color: black;
+  opacity: 0.75;
+  display: inline-block;
+  position: relative;
+  right: 20px;
+
+}
+
+#nov2 {
+  font-family: 'franklingothicheavyitalic';
+  font-size: 25px;
+  color: #ebd2bf;
+  position: relative;
+  top: 20px;
+  left: 35px;
+}
+
+.aside h2 {
+	font-family: 'franklingothicheavyitalic';
+	font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: 25px;
+
+}
+
+.aside h3 {
+  font-family: 'franklingothicheavyregular';
+  font-size: 20px;
+  position: relative;
+    text-align: center;
+  top: 30px;
+}
+
+.aside p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+.pledge {
+  height: 30px;
+  width: 100px;
+  display: inline-block;
+  margin: 15px;
+  background-color: black;
+  color: #ebd2bf;
+  opacity: 0.75;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+#pledge {
+  height: 35px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'franklingothicheavyregular';
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ebd2bf;
+  background-color: #ec2c27;
+  position: relative;
+  top: 40px;
+}
+
+.footer {
+	width: 960px;
+	height: 60px;
+	background-color: black;
+  clear: both;
+  position: relative;
+  top: 50px;
+  bottom: 0;
+}
+
+.footer p {
+  font-family: 'localbrewerythreebold';
+	font-size: 20px;
+	color: #ebd2bf;
+  text-align: center;
+  position: relative;
+  top: 18px;
+}
+
+.clear:after {
+	content:"";
+	display: table;
+	clear: both;
+}
